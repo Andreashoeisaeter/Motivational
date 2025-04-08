@@ -17,7 +17,6 @@ print(f"{WHITE}Welcome to Motivational, a quote motivation booster program! {RES
 
 print(f"{GREEN}Sending you one message every hour ... {RESET}\n")
 
-
 def messages():
 
     frequency = 2500
@@ -37,4 +36,6 @@ my_schedule.every(1).hours.do(messages)
 while True:
     my_schedule.run_pending()
     time.sleep(1)
+
+
 
