@@ -4,7 +4,6 @@ import schedule
 import time
 import winsound
 from colorama import init, Fore
-import keyboard
 
 init()
 
@@ -38,3 +37,4 @@ my_schedule.every(1).hours.do(messages)
 while True:
     my_schedule.run_pending()
     time.sleep(1)
+
